@@ -1,0 +1,53 @@
+<!--
+1. Rename your project in the format:
+    Battleship Page - Student Name (Basic HTML DOM Project)
+    Example: Login Page - Ravi (Basic HTML DOM Project)
+2. Construct a 4 x 4 grid of squares.
+3. Select two images of your choice.
+4. When a square is clicked, it should display one of the two chosen images.
+5. Create a 'Reset' button that resets the progress when clicked.
+6. For further clarification, please refer to the GIF provided at https://academy.bigbinary.com/projects/battleship-game.
+7. You can use all the knowledge from the Basic HTML, CSS, JS and HTML DOM also you can use any useful
+assets from the internet.
+-->
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <link rel="stylesheet" href="style.css">
+        <title>Battleship Page - Debi prasad Barik</title>
+    </head>
+    <body>
+        <h1>Battleship</h1>
+        <div class="container">
+        <p>Game Rules:</P>
+        <ol class="gamerules">
+            <li class="rulesList">Click on the cells to reveal the image hidden behind them.</li>
+            <li class="rulesList">There are 5 ships hidden in the game.</li>
+            <li class="rulesList">You win if you can find all ships in less than 8 clicks, else you lose.</li>
+        </ol>
+        </div>
+        <div class="gridSquares" >
+           <div class="gridItem" data-image="ship"><img id="ship" class="image hidden"   src = "https://img.freepik.com/premium-vector/realistic-cuise-liner-luxury-voyage_208581-416.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1714953600&semt=sph" alt="shipimage"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="ship"><img id="ship" class="image hidden"   src = "https://img.freepik.com/premium-vector/realistic-cuise-liner-luxury-voyage_208581-416.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1714953600&semt=sph" alt="shipimage"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="ship"><img id="ship" class="image hidden"   src = "https://img.freepik.com/premium-vector/realistic-cuise-liner-luxury-voyage_208581-416.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1714953600&semt=sph" alt="shipimage"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="ship"><img id="ship" class="image hidden"   src = "https://img.freepik.com/premium-vector/realistic-cuise-liner-luxury-voyage_208581-416.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1714953600&semt=sph" alt="shipimage"></div>
+           <div class="gridItem" data-image="ship"><img id="ship" class="image hidden"   src = "https://img.freepik.com/premium-vector/realistic-cuise-liner-luxury-voyage_208581-416.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1714953600&semt=sph" alt="shipimage"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+           <div class="gridItem" data-image="water"><img id="ocean" class="ocean hidden" src = "https://thumbs.dreamstime.com/b/square-format-background-calm-blue-water-small-waves-endless-ripples-copy-space-background-calm-blue-water-151864497.jpg" alt="oceanimg"></div>
+        </div>
+        <br>
+        <br>
+            <button id="resetbtn" type="reset">Reset</button>   
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(211, 77, 77);
+  }
+  h1{
+    text-decoration:underline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    text-decoration-color: blue;
+  }
+  .gridItem{
+    cursor: pointer;
+  }
+  .gridSquares{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 110px 110px 110px 110px;
+    margin: 9px;
+    grid-gap: 0px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    
+  }
+  .gridSquares > div{
+    justify-content: center;
+    align-items: center;
+    border:2px solid white;
+  
+  }
+  #resetbtn {
+    display: block;
+    margin: 0px auto;
+    color: black;
+    text-align: center;
+    font-weight:500;
+    font-size: 1.7rem;
+    height: 250%;
+    background-color: rgb(209, 49, 49);
+    padding: 12px 40px;
+    border: none;
+    cursor: pointer;
+    box-shadow:  4px 4px  rgba(92, 73, 235, 0.893);
+  }
+  
+  .image{
+    height:110px;
+    width: 120px;
+  }
+  .ocean{
+    height:110px;
+    width:120px;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  .container{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  ol.gamerules{
+    display: inline-block;
+    text-align: left;
+    padding: 0px;
+    margin : 0px;
+}  
